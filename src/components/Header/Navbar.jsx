@@ -96,21 +96,26 @@ const Header = () => {
                 </button>
               </Link>
               <div className="inp">
-                <input
-                  value={searchValue}
-                  onChange={(e) => setSearchValue(e.target.value)}
-                  type="search"
-                  placeholder="Поиск по товарам"
-                  aria-label="Search products"
-                  onFocus={() => setIsSearchFocused(true)}
-                  onBlur={() => setIsSearchFocused(false)}
-                />
-                <CiSearch />
-                {isSearchFocused && searchValue && (
-                  <div className="ser active">
-                    <Search filterData={filterData} />
-                  </div>
-                )}
+               
+              <input
+  value={searchValue}
+  onChange={(e) => setSearchValue(e.target.value)}
+  type="search"
+  placeholder="Поиск по товарам"
+  aria-label="Search products"
+  onFocus={() => setIsSearchFocused(true)}
+  onBlur={() => setTimeout(() => setIsSearchFocused(false), 200)}
+/>
+{isSearchFocused && searchValue && (
+  <div
+    className="ser active"
+    onMouseDown={(e) => e.preventDefault()} // onBlur'dan oldin ishlaydi
+  >
+    <Search filterData={filterData} />
+  </div>
+)}
+
+
               </div>
             </div>
             <div className="nav__icons">

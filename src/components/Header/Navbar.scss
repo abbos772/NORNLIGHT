@@ -107,6 +107,7 @@ header {
       position: relative;
       .ser {
         position: absolute;
+        z-index: 1000;
         top: 50px;
         display: flex;
         flex-direction: column;
@@ -115,9 +116,12 @@ header {
         width: 90%;
         background-color: rgb(233, 233, 233);
         border-radius: 15px;
-        padding: 20px;
+        padding: 20px 20 20px 20 ;
         p {
           cursor: pointer;
+        }
+        p:hover{
+          color: rgb(213, 7, 7);
         }
       }
       input {

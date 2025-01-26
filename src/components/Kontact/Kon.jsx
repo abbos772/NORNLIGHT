@@ -1,6 +1,7 @@
 import React from "react";
 import "./Kon.scss";
-
+import Footer from '../Footer/Footer'
+import Bot from '../Bot/Bot'
 const Kon = () => {
   return (
     <div>
@@ -53,7 +54,9 @@ const Kon = () => {
             <button>Оставить заявку</button>
           </div>
         </div>
+        <Bot/>
       </div>
+      <Footer/>
     </div>
   );
 };

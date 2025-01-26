@@ -1,0 +1,299 @@
+.Bot{
+    width: 100%;
+    max-width: 1980px;
+    margin: 0 auto;
+    padding-top: 50px;
+    .Bot_flex{
+        display: flex;
+        align-items: center;
+       margin: 0 auto;
+       
+        .Bot_text{
+            margin: 0 auto;
+            width: 100%;
+            max-width: 526px;
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+            h5{
+                //styleName: Subtitle;
+font-family: Syne;
+font-size: 18px;
+font-weight: 700;
+line-height: 26px;
+text-align: left;
+text-underline-position: from-font;
+text-decoration-skip-ink: none;
+color: rgba(127, 39, 255, 1);
+
+            }
+            h1{
+                //styleName: H3;
+font-family: Syne;
+font-size: 64px;
+font-weight: 700;
+line-height: 72px;
+text-align: left;
+text-underline-position: from-font;
+text-decoration-skip-ink: none;
+
+            }
+            form{
+                display: flex;
+                flex-direction: column;
+                gap: 25px;
+                input{
+                    height: 56px;
+gap: 8px;
+border-radius: 4px;
+border: 1px solid rgba(26, 29, 39, 0.4);
+opacity: 0px;
+background-color: 0;
+outline: 0;
+padding: 20px;
+font-size: 16px;
+font-family: sans-serif;
+                }
+                textarea{
+                    height: 160px;
+                    background-color: 0;
+outline: 0;
+padding: 20px;
+font-size: 16px;
+font-family: sans-serif;
+border-radius: 4px;
+border: 1px solid rgba(26, 29, 39, 0.4);
+                }
+                button{
+                    color: white;
+                    width: Fixed (526px)px;
+height: Hug (56px)px;
+padding: 20px 40px 20px 40px;
+gap: 8px;
+border-radius: 4px 0px 0px 0px;
+opacity: 0px;
+background: #454545;
+border-radius: 20px;
+border: 0;
+cursor: pointer;
+//styleName: Action;
+font-family: Syne;
+font-size: 15px;
+font-weight: 500;
+line-height: 16px;
+letter-spacing: 1px;
+text-align: center;
+text-underline-position: from-font;
+text-decoration-skip-ink: none;
+
+                }
+            }
+        }
+    }
+}
+@media (max-width:1200px){
+    .Bot{
+        width: 100%;
+        max-width: 1980px;
+        margin: 0 auto;
+        padding-top: 150px;
+       
+        .Bot_flex{
+            display: flex;
+            padding: 25px;
+            align-items: center;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 100px;
+            .Bot_img{
+                 img{
+                    width: 100%;
+                    max-width: 944px;
+                    height: auto;
+                }
+            }
+            .Bot_text{
+                width: 100%;
+                max-width: 526px;
+                display: flex;
+                flex-direction: column;
+                gap: 20px;
+                h5{
+                    //styleName: Subtitle;
+    font-family: Syne;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 26px;
+    text-align: left;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+    color: rgba(127, 39, 255, 1);
+    
+                }
+                h1{
+                    //styleName: H3;
+    font-family: Syne;
+    font-size: 64px;
+    font-weight: 700;
+    line-height: 72px;
+    text-align: left;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+    
+                }
+                form{
+                    display: flex;
+                    flex-direction: column;
+                    gap: 25px;
+                    input{
+                        height: 56px;
+    gap: 8px;
+    border-radius: 4px;
+    border: 1px solid rgba(26, 29, 39, 0.4);
+    opacity: 0px;
+    background-color: 0;
+    outline: 0;
+    padding: 20px;
+    font-size: 16px;
+    font-family: sans-serif;
+                    }
+                    textarea{
+                        height: 160px;
+                        background-color: 0;
+    outline: 0;
+    padding: 20px;
+    font-size: 16px;
+    font-family: sans-serif;
+    border-radius: 4px;
+    border: 1px solid rgba(26, 29, 39, 0.4);
+                    }
+                    button{
+                        width: Fixed (526px)px;
+    height: Hug (56px)px;
+    padding: 20px 40px 20px 40px;
+    gap: 8px;
+    border-radius: 4px 0px 0px 0px;
+    opacity: 0px;
+    background: rgba(255, 137, 17, 1);
+    border: 0;
+    cursor: pointer;
+    //styleName: Action;
+    font-family: Syne;
+    font-size: 15px;
+    font-weight: 500;
+    line-height: 16px;
+    letter-spacing: 1px;
+    text-align: center;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+    
+                    }
+                }
+            }
+        }
+    }
+    
+}
+@media (max-width:500px){
+    .Bot{
+        width: 100%;
+        max-width: 1980px;
+        margin: 0 auto;
+        padding-top: 150px;
+       
+        .Bot_flex{
+            display: flex;
+            padding: 25px;
+            align-items: center;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 100px;
+            .Bot_img{
+                 img{
+                    width: 100%;
+                    max-width: 944px;
+                    height: auto;
+                }
+            }
+            .Bot_text{
+                width: 100%;
+                max-width: 526px;
+                display: flex;
+                flex-direction: column;
+                gap: 20px;
+                h5{
+                    //styleName: Subtitle;
+    font-family: Syne;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 26px;
+    text-align: left;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+    color: rgba(127, 39, 255, 1);
+    
+                }
+                h1{
+                    //styleName: H3;
+    font-family: Syne;
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 45px;
+    text-align: left;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+    
+                }
+                form{
+                    display: flex;
+                    flex-direction: column;
+                    gap: 20px;
+                    input{
+                        height: 56px;
+    gap: 8px;
+    border-radius: 4px;
+    border: 1px solid rgba(26, 29, 39, 0.4);
+    opacity: 0px;
+    background-color: 0;
+    outline: 0;
+    padding: 20px;
+    font-size: 16px;
+    font-family: sans-serif;
+                    }
+                    textarea{
+                        height: 160px;
+                        background-color: 0;
+    outline: 0;
+    padding: 20px;
+    font-size: 16px;
+    font-family: sans-serif;
+    border-radius: 4px;
+    border: 1px solid rgba(26, 29, 39, 0.4);
+                    }
+                    button{
+                        width: Fixed (526px)px;
+    height: Hug (56px)px;
+    padding: 20px 40px 20px 40px;
+    gap: 8px;
+    border-radius: 4px 0px 0px 0px;
+    opacity: 0px;
+    background: rgba(255, 137, 17, 1);
+    border: 0;
+    cursor: pointer;
+    //styleName: Action;
+    font-family: Syne;
+    font-size: 15px;
+    font-weight: 500;
+    line-height: 16px;
+    letter-spacing: 1px;
+    text-align: center;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+    
+                    }
+                }
+            }
+        }
+    }
+    
+}

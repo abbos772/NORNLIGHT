@@ -1,12 +1,12 @@
 import React from "react";
 import "./Product.scss";
-import { IoCartOutline } from "react-icons/io5";
+import { IoCart, IoCartOutline } from "react-icons/io5";
 import { FaRegHeart, FaHeart } from "react-icons/fa";
 import { Link } from "react-router-dom";
 import { useDispatch, useSelector } from "react-redux";
 import Skeleton from "../Skeleton/Skeleton";
 import { toggleHeart } from "../context/Heart/HeartSlice";
-import { addToCart } from "../context/Cart/CartSlice";
+import { addToCart, removeFromCart } from "../context/Cart/CartSlice";
 
 const Product = ({ data, isLoading }) => {
   const dispatch = useDispatch();
@@ -46,11 +46,17 @@ const Product = ({ data, isLoading }) => {
             <p>{el.price * 1.5}₽</p>
             <h3>{el.price}₽</h3>
           </div>
-          <button onClick={() => dispatch(addToCart(el))}>
+          <button onClick={() => {
+            if (carts.some((item) => item.id === el.id)) {
+              dispatch(removeFromCart(el.id));  // Remove item from cart
+            } else {
+              dispatch(addToCart(el));  // Add item to cart
+            }
+          }}>
             {carts.some((item) => item.id === el.id) ? (
-              <IoCartOutline className="svg" />
+              <IoCart className="svg" />  // Show cart icon when item is in cart
             ) : (
-              <IoCartOutline className="svg" />
+              <IoCartOutline className="svg" />  // Show outline when item is not in cart
             )}
           </button>
         </div>

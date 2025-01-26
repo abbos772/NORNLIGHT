@@ -1,7 +1,9 @@
 import React from "react";
 import "../About/About.scss";
+import Footer from '../Footer/Footer'
 const Garant = () => {
   return (
+    <>
     <div className="container">
       <p
         style={{
@@ -33,7 +35,10 @@ const Garant = () => {
           </p>
         </div>
       </div>
+ 
     </div>
+         <Footer/>
+        </>
   );
 };
 
